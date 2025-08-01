@@ -32,14 +32,6 @@ class App(tk.Tk):
         self.canvas.delete("all")
         self.draw.rectangle([0, 0, canvas_width, canvas_height], fill=255)
 
-    # def predict(self):
-    #     img_resized = self.image.resize((28, 28))
-    #     img_array = np.array(img_resized)
-    #     img_array = img_array / 255.0
-    #     img_array = img_array.reshape(1, 28, 28)
-    #     prediction = self.model.predict(img_array)
-    #     digit = np.argmax(prediction)
-    #     messagebox.showinfo("Prediction", f"Predicted Digit: {digit}")
     def predict(self):
         img_resized = self.image.resize((28, 28))
         img_array = np.array(img_resized)
